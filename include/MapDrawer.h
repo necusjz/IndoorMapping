@@ -28,7 +28,7 @@
 
 #include<mutex>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class MapDrawer
@@ -59,6 +59,6 @@ private:
     std::mutex mMutexCamera;
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif // MAPDRAWER_H

@@ -23,7 +23,7 @@
 
 #include <mutex>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 Viewer::Viewer(System* pSystem, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Tracking *pTracking, const string &strSettingPath):

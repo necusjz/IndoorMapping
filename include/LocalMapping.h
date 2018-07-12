@@ -30,7 +30,7 @@
 #include <mutex>
 
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class Tracking;
@@ -123,6 +123,6 @@ protected:
     std::mutex mMutexAccept;
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif // LOCALMAPPING_H

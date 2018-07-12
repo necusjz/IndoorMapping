@@ -28,7 +28,7 @@
 #include<opencv2/core/core.hpp>
 #include<mutex>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class KeyFrame;
@@ -147,6 +147,6 @@ protected:
      std::mutex mMutexFeatures;
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif // MAPPOINT_H

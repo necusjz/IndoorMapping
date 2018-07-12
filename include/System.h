@@ -36,7 +36,7 @@
 #include "ORBVocabulary.h"
 #include "Viewer.h"
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class Viewer;
@@ -176,6 +176,6 @@ private:
     std::mutex mMutexState;
 };
 
-}// namespace ORB_SLAM
+}// namespace indoor_mapping
 
 #endif // SYSTEM_H

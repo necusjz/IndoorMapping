@@ -26,7 +26,7 @@
 
 #include<mutex>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 FrameDrawer::FrameDrawer(Map* pMap):mpMap(pMap)
@@ -200,4 +200,4 @@ void FrameDrawer::Update(Tracking *pTracker)
     mState=static_cast<int>(pTracker->mLastProcessedState);
 }
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping

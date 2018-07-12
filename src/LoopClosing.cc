@@ -32,7 +32,7 @@
 #include<thread>
 
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, const bool bFixScale):
@@ -773,4 +773,4 @@ bool LoopClosing::isFinished()
 }
 
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping

@@ -34,7 +34,7 @@
 
 #include<mutex>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 
@@ -1241,4 +1241,4 @@ int Optimizer::OptimizeSim3(KeyFrame *pKF1, KeyFrame *pKF2, vector<MapPoint *> &
 }
 
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping

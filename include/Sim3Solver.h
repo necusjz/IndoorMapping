@@ -29,7 +29,7 @@
 
 
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class Sim3Solver
@@ -128,6 +128,6 @@ protected:
 
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif // SIM3SOLVER_H

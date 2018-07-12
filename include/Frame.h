@@ -32,7 +32,7 @@
 
 #include <opencv2/opencv.hpp>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 #define FRAME_GRID_ROWS 48
 #define FRAME_GRID_COLS 64
@@ -208,6 +208,6 @@ private:
     cv::Mat mOw; //==mtwc
 };
 
-}// namespace ORB_SLAM
+}// namespace indoor_mapping
 
 #endif // FRAME_H

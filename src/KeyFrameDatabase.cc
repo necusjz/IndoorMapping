@@ -27,7 +27,7 @@
 
 using namespace std;
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 KeyFrameDatabase::KeyFrameDatabase (const ORBVocabulary &voc):
@@ -308,4 +308,4 @@ vector<KeyFrame*> KeyFrameDatabase::DetectRelocalizationCandidates(Frame *F)
     return vpRelocCandidates;
 }
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping

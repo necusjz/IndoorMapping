@@ -55,7 +55,7 @@
 #include "MapPoint.h"
 #include "Frame.h"
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class PnPsolver {
@@ -193,6 +193,6 @@ class PnPsolver {
 
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif //PNPSOLVER_H

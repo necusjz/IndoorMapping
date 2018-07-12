@@ -28,7 +28,7 @@
 #include <string>
 #include"../../../include/System.h"
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class Plane

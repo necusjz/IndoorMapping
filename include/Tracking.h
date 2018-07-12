@@ -40,7 +40,7 @@
 
 #include <mutex>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class Viewer;
@@ -216,6 +216,6 @@ protected:
     list<MapPoint*> mlpTemporalPoints;
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif // TRACKING_H

@@ -28,7 +28,7 @@
 
 using namespace std;
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 const float eps = 1e-4;

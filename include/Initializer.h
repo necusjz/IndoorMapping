@@ -24,7 +24,7 @@
 #include "Frame.h"
 
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 // THIS IS THE INITIALIZER FOR MONOCULAR SLAM. NOT USED IN THE STEREO OR RGBD CASE.
@@ -96,6 +96,6 @@ private:
 
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif // INITIALIZER_H

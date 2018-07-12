@@ -23,7 +23,7 @@
 #include "ORBmatcher.h"
 #include <thread>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 long unsigned int Frame::nNextId=0;
@@ -679,4 +679,4 @@ cv::Mat Frame::UnprojectStereo(const int &i)
         return cv::Mat();
 }
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping

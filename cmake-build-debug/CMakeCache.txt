@@ -135,7 +135,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ORB_SLAM2
+CMAKE_PROJECT_NAME:STATIC=indoor_mappping
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -197,6 +197,12 @@ OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+indoor_mappping_BINARY_DIR:STATIC=/Users/ichigoi7e/workspace/indoor_mapping/cmake-build-debug
+
+//Value Computed by CMake
+indoor_mappping_SOURCE_DIR:STATIC=/Users/ichigoi7e/workspace/indoor_mapping
 
 
 ########################

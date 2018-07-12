@@ -40,7 +40,7 @@
 
 using namespace std;
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor):
@@ -1589,4 +1589,4 @@ void Tracking::InformOnlyTracking(const bool &flag)
 
 
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping

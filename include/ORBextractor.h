@@ -26,7 +26,7 @@
 #include <opencv/cv.h>
 
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 class ExtractorNode
@@ -110,7 +110,7 @@ protected:
     std::vector<float> mvInvLevelSigma2;
 };
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
 
 #endif
 

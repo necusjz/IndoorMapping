@@ -25,7 +25,7 @@
 
 #include<mutex>
 
-namespace ORB_SLAM2
+namespace indoor_mapping
 {
 
 LocalMapping::LocalMapping(Map *pMap, const float bMonocular):
@@ -757,4 +757,4 @@ bool LocalMapping::isFinished()
     return mbFinished;
 }
 
-} //namespace ORB_SLAM
+} //namespace indoor_mapping
