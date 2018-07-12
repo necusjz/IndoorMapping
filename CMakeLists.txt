@@ -77,7 +77,7 @@ src/KeyFrameDatabase.cc
 src/Sim3Solver.cc
 src/Initializer.cc
 src/Viewer.cc
-src/PointCloud.cc
+src/PointCloudMapping.cc
 )
 
 target_link_libraries(${PROJECT_NAME}
