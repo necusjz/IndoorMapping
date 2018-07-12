@@ -1,9 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ichigoi7e/workspace/indoor_mapping
-Build type: Debug
--- Using flag -std=c++11.
-CMake Error at CMakeLists.txt:37 (message):
-  OpenCV > 2.4.3 not found.
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/ichigoi7e/workspace/indoor_mapping/cmake-build-debug/CMakeFiles/CMakeOutput.log".
