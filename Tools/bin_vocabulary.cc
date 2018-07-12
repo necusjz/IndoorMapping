@@ -10,7 +10,7 @@ void save_as_binary(indoor_mapping::ORBVocabulary *voc, const std::string outfil
 bool load_as_text(indoor_mapping::ORBVocabulary *voc, const std::string infile) {
     clock_t tStart = clock();
     bool res = voc->loadFromTextFile(infile);
-    printf("Loading fom text: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
+    printf("Loading from text: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
     return res;
 }
 
