@@ -62,7 +62,7 @@ int main(int argc, char **argv)
     }
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
-    indoor_mapping::System SLAM(argv[1],argv[2],indoor_mapping::System::RGBD,true);
+    indoor_mapping::System SLAM(argv[1], argv[2], indoor_mapping::System::RGBD, true);
 
     // Vector for tracking time statistics
     vector<float> vTimesTrack;
@@ -95,7 +95,7 @@ int main(int argc, char **argv)
 #endif
 
         // Pass the image to the SLAM system
-        SLAM.TrackRGBD(imRGB,imD,tframe);
+        SLAM.TrackRGBD(imRGB, imD, tframe);
 
 #ifdef COMPILEDWITHC11
         std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
