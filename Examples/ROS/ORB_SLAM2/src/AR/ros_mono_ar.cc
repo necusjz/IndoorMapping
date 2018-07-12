@@ -37,7 +37,7 @@
 using namespace std;
 
 
-ORB_SLAM2::ViewerAR viewerAR;
+indoor_mapping::ViewerAR viewerAR;
 bool bRGB = true;
 
 cv::Mat K;
@@ -47,11 +47,11 @@ cv::Mat DistCoef;
 class ImageGrabber
 {
 public:
-    ImageGrabber(ORB_SLAM2::System* pSLAM):mpSLAM(pSLAM){}
+    ImageGrabber(indoor_mapping::System* pSLAM):mpSLAM(pSLAM){}
 
     void GrabImage(const sensor_msgs::ImageConstPtr& msg);
 
-    ORB_SLAM2::System* mpSLAM;
+    indoor_mapping::System* mpSLAM;
 };
 
 int main(int argc, char **argv)
@@ -67,7 +67,7 @@ int main(int argc, char **argv)
     }
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
-    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::MONOCULAR,false);
+    indoor_mapping::System SLAM(argv[1],argv[2],indoor_mapping::System::MONOCULAR,false);
 
 
     cout << endl << endl;
@@ -120,7 +120,7 @@ int main(int argc, char **argv)
         DistCoef.at<float>(4) = k3;
     }
 
-    thread tViewer = thread(&ORB_SLAM2::ViewerAR::Run,&viewerAR);
+    thread tViewer = thread(&indoor_mapping::ViewerAR::Run,&viewerAR);
 
     ros::spin();
 
@@ -152,7 +152,7 @@ void ImageGrabber::GrabImage(const sensor_msgs::ImageConstPtr& msg)
     cv::Mat imu;
     cv::Mat Tcw = mpSLAM->TrackMonocular(cv_ptr->image,cv_ptr->header.stamp.toSec());
     int state = mpSLAM->GetTrackingState();
-    vector<ORB_SLAM2::MapPoint*> vMPs = mpSLAM->GetTrackedMapPoints();
+    vector<indoor_mapping::MapPoint*> vMPs = mpSLAM->GetTrackedMapPoints();
     vector<cv::KeyPoint> vKeys = mpSLAM->GetTrackedKeyPointsUn();
 
     cv::undistort(im,imu,K,DistCoef);

@@ -235,7 +235,7 @@ void ViewerAR::Run()
 
 }
 
-void ViewerAR::SetImagePose(const cv::Mat &im, const cv::Mat &Tcw, const int &status, const vector<cv::KeyPoint> &vKeys, const vector<ORB_SLAM2::MapPoint*> &vMPs)
+void ViewerAR::SetImagePose(const cv::Mat &im, const cv::Mat &Tcw, const int &status, const vector<cv::KeyPoint> &vKeys, const vector<indoor_mapping::MapPoint*> &vMPs)
 {
     unique_lock<mutex> lock(mMutexPoseImage);
     mImage = im.clone();

@@ -64,7 +64,7 @@ public:
         mT=1e3/fps;
     }
 
-    void SetSLAM(ORB_SLAM2::System* pSystem){
+    void SetSLAM(indoor_mapping::System* pSystem){
         mpSystem = pSystem;
     }
 
@@ -84,7 +84,7 @@ public:
 private:
 
     //SLAM
-    ORB_SLAM2::System* mpSystem;
+    indoor_mapping::System* mpSystem;
 
     void PrintStatus(const int &status, const bool &bLocMode, cv::Mat &im);
     void AddTextToImage(const std::string &s, cv::Mat &im, const int r=0, const int g=0, const int b=0);
