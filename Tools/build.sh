@@ -33,4 +33,4 @@ make
 cd ..
 
 echo "Converting vocabulary to binary ..."
-./bin_vocabulary
+./Tools/bin_vocabulary
