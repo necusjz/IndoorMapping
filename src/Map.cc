@@ -22,7 +22,7 @@
 
 #include<mutex>
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 Map::Map():mnMaxKFid(0),mnBigChangeIdx(0)
@@ -130,4 +130,4 @@ void Map::clear()
     mvpKeyFrameOrigins.clear();
 }
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM

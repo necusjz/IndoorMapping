@@ -25,12 +25,12 @@
 #include"Thirdparty/DBoW2/DBoW2/FORB.h"
 #include"Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h"
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 typedef DBoW2::TemplatedVocabulary<DBoW2::FORB::TDescriptor, DBoW2::FORB>
   ORBVocabulary;
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM
 
 #endif // ORBVOCABULARY_H

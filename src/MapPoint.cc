@@ -23,7 +23,7 @@
 
 #include<mutex>
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 long unsigned int MapPoint::nNextId=0;
@@ -418,4 +418,4 @@ int MapPoint::PredictScale(const float &currentDist, Frame* pF)
 
 
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM

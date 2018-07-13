@@ -36,7 +36,12 @@
 #include "ORBVocabulary.h"
 #include "Viewer.h"
 
-namespace indoor_mapping
+// for point cloud viewing
+#include "PointCloudMapping.h"
+
+class PointCloudMapping;
+
+namespace ORB_SLAM2
 {
 
 class Viewer;
@@ -174,8 +179,11 @@ private:
     std::vector<MapPoint*> mTrackedMapPoints;
     std::vector<cv::KeyPoint> mTrackedKeyPointsUn;
     std::mutex mMutexState;
+
+    // point cloud mapping
+    shared_ptr<PointCloudMapping> mpPointCloudMapping;
 };
 
-}// namespace indoor_mapping
+}// namespace ORB_SLAM
 
 #endif // SYSTEM_H

@@ -30,7 +30,7 @@
 
 #include "Thirdparty/DBoW2/DUtils/Random.h"
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 
@@ -422,4 +422,4 @@ void Sim3Solver::FromCameraToImage(const vector<cv::Mat> &vP3Dc, vector<cv::Mat>
     }
 }
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM

@@ -31,7 +31,7 @@
 
 using namespace std;
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 const int ORBmatcher::TH_HIGH = 100;
@@ -1662,4 +1662,4 @@ int ORBmatcher::DescriptorDistance(const cv::Mat &a, const cv::Mat &b)
     return dist;
 }
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM

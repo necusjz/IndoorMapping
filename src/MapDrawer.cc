@@ -24,7 +24,7 @@
 #include <pangolin/pangolin.h>
 #include <mutex>
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 
@@ -261,4 +261,4 @@ void MapDrawer::GetCurrentOpenGLCameraMatrix(pangolin::OpenGlMatrix &M)
         M.SetIdentity();
 }
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM

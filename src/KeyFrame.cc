@@ -23,7 +23,7 @@
 #include "ORBmatcher.h"
 #include<mutex>
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 long unsigned int KeyFrame::nNextId=0;
@@ -662,4 +662,4 @@ float KeyFrame::ComputeSceneMedianDepth(const int q)
     return vDepths[(vDepths.size()-1)/q];
 }
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM

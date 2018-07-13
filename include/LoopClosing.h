@@ -33,7 +33,7 @@
 #include <mutex>
 #include "Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h"
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 class Tracking;
@@ -146,6 +146,6 @@ protected:
     bool mnFullBAIdx;
 };
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM
 
 #endif // LOOPCLOSING_H

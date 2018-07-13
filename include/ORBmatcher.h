@@ -31,7 +31,7 @@
 #include"Frame.h"
 
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 class ORBmatcher
@@ -101,6 +101,6 @@ protected:
     bool mbCheckOrientation;
 };
 
-}// namespace indoor_mapping
+}// namespace ORB_SLAM
 
 #endif // ORBMATCHER_H

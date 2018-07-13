@@ -31,7 +31,7 @@
 #include<mutex>
 
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 class Tracking;
@@ -68,6 +68,6 @@ protected:
     std::mutex mMutex;
 };
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM
 
 #endif // FRAMEDRAWER_H

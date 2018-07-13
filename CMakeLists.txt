@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(indoor_mappping)
+project(ORB_SLAM2)
 
 SET(CMAKE_EXPORT_COMPILE_COMMANDS "ON")
 
@@ -12,7 +12,7 @@ MESSAGE("Build type: " ${CMAKE_BUILD_TYPE})
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -Wall  -O3 -march=native ")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall   -O3 -march=native")
 
-#Check C++11 or C++0x support
+# Check C++11 or C++0x support
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
@@ -40,8 +40,7 @@ endif()
 
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
-
-#Adding for point cloud support
+# adding for point cloud viewer and mapper
 find_package( PCL 1.7 REQUIRED )
 
 include_directories(
@@ -52,8 +51,8 @@ ${Pangolin_INCLUDE_DIRS}
 ${PCL_INCLUDE_DIRS}
 )
 
-add_definitions(${PCL_DEFINITIONS})
-link_directories(${PCL_LIBRARY_DIRS})
+add_definitions( ${PCL_DEFINITIONS} )
+link_directories( ${PCL_LIBRARY_DIRS} )
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
@@ -89,12 +88,16 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 ${PCL_LIBRARIES}
 )
 
-#Build examples
+# Build examples
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-add_executable(rgbd_tum Examples/RGB-D/rgbd_tum.cc)
+
+add_executable(rgbd_tum 
+    test/rgbd_tum.cc)
 target_link_libraries(rgbd_tum ${PROJECT_NAME})
 
-#Build tools
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Tools)
-add_executable(bin_vocabulary Tools/bin_vocabulary.cc)
+# Build tools
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/tools)
+add_executable(bin_vocabulary
+tools/bin_vocabulary.cc)
 target_link_libraries(bin_vocabulary ${PROJECT_NAME})

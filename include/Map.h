@@ -29,7 +29,7 @@
 
 
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 class MapPoint;
@@ -80,6 +80,6 @@ protected:
     std::mutex mMutexMap;
 };
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM
 
 #endif // MAP_H

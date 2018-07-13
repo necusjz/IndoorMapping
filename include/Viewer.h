@@ -29,7 +29,7 @@
 
 #include <mutex>
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 class Tracking;

@@ -29,7 +29,7 @@
 
 #include "Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h"
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 class LoopClosing;
@@ -57,6 +57,6 @@ public:
                             g2o::Sim3 &g2oS12, const float th2, const bool bFixScale);
 };
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM
 
 #endif // OPTIMIZER_H

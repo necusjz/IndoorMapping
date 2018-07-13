@@ -27,7 +27,7 @@
 
 #include<thread>
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 Initializer::Initializer(const Frame &ReferenceFrame, float sigma, int iterations)
@@ -928,4 +928,4 @@ void Initializer::DecomposeE(const cv::Mat &E, cv::Mat &R1, cv::Mat &R2, cv::Mat
         R2=-R2;
 }
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM

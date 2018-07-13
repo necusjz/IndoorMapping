@@ -32,7 +32,7 @@
 #include <mutex>
 
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 class Map;
@@ -233,6 +233,6 @@ protected:
     std::mutex mMutexFeatures;
 };
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM
 
 #endif // KEYFRAME_H

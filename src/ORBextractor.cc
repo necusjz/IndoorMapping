@@ -66,7 +66,7 @@
 using namespace cv;
 using namespace std;
 
-namespace indoor_mapping
+namespace ORB_SLAM2
 {
 
 const int PATCH_SIZE = 31;
@@ -1131,4 +1131,4 @@ void ORBextractor::ComputePyramid(cv::Mat image)
 
 }
 
-} //namespace indoor_mapping
+} //namespace ORB_SLAM
