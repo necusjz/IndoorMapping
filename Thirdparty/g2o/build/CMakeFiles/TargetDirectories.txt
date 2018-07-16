@@ -1,1 +1,0 @@
-/home/ichigoi7e/workspace/ORB_SLAM2_modified/Thirdparty/g2o/build/CMakeFiles/g2o.dir
