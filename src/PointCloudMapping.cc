@@ -17,14 +17,15 @@
  *
  */
 
-#include "PointCloudMapping.h"
-#include <KeyFrame.h>
-#include <opencv2/highgui/highgui.hpp>
-#include <pcl/visualization/cloud_viewer.h>
-#include <pcl/common/projection_matrix.h>
 #include "Converter.h"
+#include "PointCloudMapping.h"
 
+#include <KeyFrame.h>
 #include <boost/make_shared.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <pcl/io/pcd_io.h>
+#include <pcl/common/projection_matrix.h>
+#include <pcl/visualization/cloud_viewer.h>
 
 PointCloudMapping::PointCloudMapping(double resolution_)
 {
@@ -92,7 +93,7 @@ pcl::PointCloud< PointCloudMapping::PointT >::Ptr PointCloudMapping::generatePoi
 
 void PointCloudMapping::viewer()
 {
-    pcl::visualization::CloudViewer viewer("viewer");
+    pcl::visualization::CloudViewer viewer("Point Cloud Viewer");
     while(1)
     {
         {
@@ -127,5 +128,5 @@ void PointCloudMapping::viewer()
         cout << "show global map, size=" << globalMap->points.size() << endl;
         lastKeyframeSize = N;
     }
+    pcl::io::savePCDFileASCII("map.pcd", *globalMap);
 }
-
