@@ -40,8 +40,10 @@ endif()
 
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
-# adding for point cloud viewer and mapper
+# Adding for point cloud viewer and mapper
 find_package( PCL 1.7 REQUIRED )
+# Adding for octomap
+find_package( octomap REQUIRED )
 
 include_directories(
 ${PROJECT_SOURCE_DIR}
@@ -49,6 +51,7 @@ ${PROJECT_SOURCE_DIR}/include
 ${EIGEN3_INCLUDE_DIR}
 ${Pangolin_INCLUDE_DIRS}
 ${PCL_INCLUDE_DIRS}
+${OCTOMAP_INCLUDE_DIRS}
 )
 
 add_definitions( ${PCL_DEFINITIONS} )
@@ -86,10 +89,10 @@ ${Pangolin_LIBRARIES}
 ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
 ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 ${PCL_LIBRARIES}
+${OCTOMAP_LIBRARIES}
 )
 
-# Build examples
-
+# Build tests
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 add_executable(rgbd_tum 
@@ -98,6 +101,11 @@ target_link_libraries(rgbd_tum ${PROJECT_NAME})
 
 # Build tools
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/tools)
+
 add_executable(text2binary
         tools/text2binary.cc)
 target_link_libraries(text2binary ${PROJECT_NAME})
+
+add_executable(pcd2octomap
+        tools/pcd2octomap.cc)
+target_link_libraries(pcd2octomap ${PROJECT_NAME})
