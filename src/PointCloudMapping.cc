@@ -20,7 +20,6 @@
 #include "PointCloudMapping.h"
 #include <KeyFrame.h>
 #include <opencv2/highgui/highgui.hpp>
-#include <pcl/io/pcd_io.h>
 #include <pcl/visualization/cloud_viewer.h>
 #include <pcl/common/projection_matrix.h>
 #include "Converter.h"
@@ -126,7 +125,6 @@ void PointCloudMapping::viewer()
         globalMap->swap( *tmp );
         viewer.showCloud( globalMap );
         cout << "show global map, size=" << globalMap->points.size() << endl;
-        pcl::io::savePCDFileBinary("map.pcd", *globalMap );
         lastKeyframeSize = N;
     }
 }

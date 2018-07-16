@@ -98,6 +98,6 @@ target_link_libraries(rgbd_tum ${PROJECT_NAME})
 
 # Build tools
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/tools)
-add_executable(bin_vocabulary
-tools/bin_vocabulary.cc)
-target_link_libraries(bin_vocabulary ${PROJECT_NAME})
+add_executable(text2binary
+        tools/text2binary.cc)
+target_link_libraries(text2binary ${PROJECT_NAME})
