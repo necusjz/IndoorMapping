@@ -1,3 +1,7 @@
+#
+# Created by ichigoi7e on 17/07/2018.
+#
+
 #!/bin/bash
 
 # Run test

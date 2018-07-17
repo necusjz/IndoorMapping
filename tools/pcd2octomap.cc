@@ -1,9 +1,6 @@
-/*************************************************************************
-	> File Name: src/pcd2octomap.cpp
-	> Author: Gao Xiang
-	> Mail: gaoxiang12@mails.tsinghua.edu.cn
-	> Created Time: 2015年12月12日 星期六 15时51分45秒
- ************************************************************************/
+//
+// Created by ichigoi7e on 13/07/2018.
+//
 
 #include <iostream>
 #include <assert.h>
