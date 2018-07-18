@@ -31,8 +31,8 @@ int main( int argc, char** argv )
 
     //声明octomap变量
     cout<<"copy data into octomap..."<<endl;
-    // 创建带颜色的八叉树对象，参数为分辨率，这里设成了0.05
-    octomap::ColorOcTree tree( 0.05 );
+    // 创建带颜色的八叉树对象，参数为分辨率，这里设成了0.04
+    octomap::ColorOcTree tree( 0.04 );
 
     for (auto p:cloud.points)
     {
