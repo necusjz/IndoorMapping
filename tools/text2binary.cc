@@ -1,5 +1,5 @@
 //
-// Created by ichigoi7e on 12/07/2018.
+// Created by hyang on 12/07/2018.
 //
 
 #include <time.h>

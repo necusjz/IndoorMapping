@@ -1,5 +1,5 @@
 //
-// Created by ichigoi7e on 17/07/2018.
+// Created by hyang on 17/07/2018.
 //
 
 #ifndef POINTCLOUDMAPPING_H
