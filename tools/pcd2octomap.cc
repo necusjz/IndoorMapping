@@ -27,7 +27,7 @@ int main( int argc, char** argv )
     pcl::PointCloud<pcl::PointXYZRGBA> cloud;
     pcl::io::loadPCDFile<pcl::PointXYZRGBA> ( input_file, cloud );
 
-    cout<<"point cloud loaded, piont size = "<<cloud.points.size()<<endl;
+    cout<<"point cloud loaded, point size = "<<cloud.points.size()<<endl;
 
     //声明octomap变量
     cout<<"copy data into octomap..."<<endl;
